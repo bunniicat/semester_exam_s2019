@@ -490,19 +490,9 @@ body {
       width: 100%;
       background-color: rgba(18,69,140,1);
       border-radius: 20px 20px 0px 0px;
-      font-family: forma-djr-display, sans-serif;
-      text-transform: uppercase;
-      display: flex;
-      justify-content: space-between;
+      padding: 30px;
+      margin-top: 100px;
 
-  }
-
-  .footer_left a, .footer_right a {
-      color: white;
-      text-decoration: none;
-      font-size: 1.2rem;
-      font-weight: 700;
-      margin: 20px;
   }
 
   .social_links ul {
@@ -510,5 +500,71 @@ body {
       display: flex;
   }
 
-  .social_links ul a li {
+  .social_links a {
+      margin: 10px;
   }
+
+  .social_links {
+      width: 25%;
+      margin: 0 auto;
+  }
+
+  /* contact form */
+
+  .contact_header h1 {
+      text-transform: uppercase;
+      color: white;
+      font-size: 2.5rem;
+      margin: 20px;
+      margin-top: 40px;
+  }
+
+  .contact_header {
+      font-family: forma-djr-display, sans-serif;
+  }
+
+  .kidscorner_wrapper {
+      font-family: forma-djr-display,sans-serif;
+      display: grid;
+      grid-template-columns: repeat(10,10%);
+      grid-template-rows: repeat(15,100px);
+      margin: 20px;
+  }
+
+  .kidscorner_title h1 {
+      text-transform: uppercase;
+      color: white;
+      font-size: 2.6rem;
+  }
+
+  .kidscorner_title {
+      grid-column: 1/8;
+  }
+
+  .kidscorner_info {
+      background-color: rgba(255,255,255,.5);
+      border-radius: 20px;
+      padding: 20px;
+      margin: 20px;
+      grid-column: 1/6;
+      grid-row: 2/5;
+  }
+
+  .kidscorner_info h3 {
+      background-color: rgba(18,69,140,1);
+      padding: 8px;
+      width: 70%;
+      color: white;
+      text-transform: uppercase;
+  }
+
+  .kids_photo {
+      grid-column: 7/11;
+  }
+
+  .kids_photo img {
+      width: 80%;
+  }
+
+
+
