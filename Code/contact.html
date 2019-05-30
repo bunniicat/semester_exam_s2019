@@ -4,52 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" href="https://use.typekit.net/cbl2zkp.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="styleGlobal.css">
+    <link rel="stylesheet" href="styleContact.css">
     <title>NASA FOR DUMMIES</title>
 </head>
 <body>
-    <script src="script.js"></script>
+    <script src="scriptContact.js"></script>
 
     <div class="nav_bar">
-        <div class="logo_nav">
-            <img src="photos/nasalogo_small.png" alt="NASA Logo">
+            <div class="logo_nav">
+                <img src="photos/nasalogo_small.png" alt="NASA Logo">
+               
+                </div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="learn.html">Learn about NASA</a></li>
+                    <li><a href="contact.html">Ask us anything</a></li>
+                    <li><a href="explore.html">Explore with us</a></li>
+                </ul>
+            </div>
+    
+        <div class="contact_wrapper">
+    
+        <div class="contact_info">
+            <h2>Let me help you send a letter to space!</h2>
+            <h3 class="name_info">Your Name</h3>
+            <p>In the pink field you can let the person that receives your letter know your name if you want to. If you don't feel comfortable telling us your name you can use a made-up name or a nickname.</p>
+            <h3 class="email_info">Email</h3>
+            <p>To be able to answer your letter we need to know where to send our reply to. If you don't have your own e-mail address, you can ask your parents for assistance.</p>
+            <h3 class="message_info">Message</h3>
+            <p>In this field you can write anything you want to say to our team of space explorers and researchers!</p>
+            <h3 class="submit_info">Submit</h3>
+            <p>If you have filled out all the required fields in the contact form and are ready to send your letter to space, please click the submit button!</p>
+        </div>
            
-            </div>
-            <ul>
-                <li><a href="index.html">— Home</a></li>
-                <li><a href="learn.html">— Learn about NASA</a></li>
-                <li><a href="contact.html">— Ask us anything</a></li>
-                <li><a href="explore.html">— Explore with us</a></li>
-            </ul>
+        <div class="wrapper">
+            <form class="form">
+              <input type="text" class="name entry " id="name_input" placeholder="Your Name"/>
+              <span class="contact_error" id="error_name">This field can not be blank*</span>
+              
+              <input type="text" class="email entry" id="email_input" placeholder="Email"/>
+              <span  class="contact_error" id="error_email">Please enter a valid email address*</span>
+              <textarea class="message entry" id="message_input" placeholder="Message"></textarea>
+              <span class="contact_error" id="error_message">This field can not be blank*</span> 
+              
+              <div class="submit entry" id="submitContact" onclick="validate()">Submit</div>
+            </form>  
+
+            <div class="shadow"></div>
+          </div>
+    
+        </div>
+    
+        <div class="footer">
+            <div class="social_links">
+                        <a href=""><img src="photos/iconmonstr-youtube-4-48.png" alt="youtube icon"></a>
+                        <a href=""><img src="photos/iconmonstr-twitter-4-48.png" alt="twitter icon"></a>
+                        <a href=""><img src="photos/iconmonstr-facebook-4-48.png" alt="facebook icon"></a>
+                        <a href=""><img src="photos/iconmonstr-instagram-14-48.png" alt="instagram icon"></a>
+            </div>  
         </div>
 
-        <div class="contact_header">
-            <h1>Send us a letter: ask us anything!</h1>
-            <div class="contact_wrapper">
-                <div class="contact_icon">
-                    <img src="photos/paper-plane.png" alt="Paper plane icon">
-                </div>
-                <div class="contact_form">
-                   
-                </div>
-            </div>
-        </div>
 
 
-    <div class="footer">
-        <div class="social_links">
-                    <a href=""><img src="photos/iconmonstr-youtube-4-48.png" alt="youtube icon"></a>
-                    <a href=""><img src="photos/iconmonstr-twitter-4-48.png" alt="twitter icon"></a>
-                    <a href=""><img src="photos/iconmonstr-facebook-4-48.png" alt="facebook icon"></a>
-                    <a href=""><img src="photos/iconmonstr-instagram-14-48.png" alt="instagram icon"></a>
-        </div>  
-    </div>
-
-    
-
-
-    
 </body>
 </html>

@@ -128,13 +128,19 @@ function displayTimeline() {
     }
 }
 
-//contact form//
+//scroll back to top button//
 
-function addClass() {
-    document.body.classList.add("sent");
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 20) {
+    document.getElementById("top_button").style.display = "block";
+  } else {
+    document.getElementById("top_button").style.display = "none";
   }
-  
-  sendLetter.addEventListener("click", addClass);s
+}
 
-
-
+function backToTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}

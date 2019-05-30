@@ -8,7 +8,7 @@ body {
 }
 
 #myVideo {
-    opacity: 0.9;
+    opacity: 0.8;
     right: 0;
     bottom: 0;
     min-width: 100%;
@@ -21,8 +21,10 @@ body {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    background-color: rgba(236,227,104,1);
+    background-color:rgb(193, 219, 232);
     border-radius: 0px 0px 10px 10px;
+    z-index: 2;
+    position: absolute;
 }
 
 .nav_bar img {
@@ -45,11 +47,12 @@ body {
 
 .nav_bar ul li a {
     text-decoration: none;
-    color: rgba(235, 81, 62, 1);
+    color: rgba(50,97,140,1);
+    transition: 0.3s ease-in-out;
 }
 
 .nav_bar ul li a:hover {
-    text-decoration: underline;
+    font-size: 1.2rem;
 }
 
 .center_wrapper {
@@ -64,16 +67,14 @@ body {
     font-weight: 700;
     font-style: normal;
     text-transform: uppercase;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: rgba(235, 81, 62, 1);
-    color: rgba(255,255,255,1);
+    color: rgba(18,69,140,1);
     font-size: 10vw;
     margin: 0;
 }
 
 .landing_info h3 {
-    background-color: rgba(236,227,104,1);
-    color: rgba(235, 81, 62, 1);
+    background-color:rgb(193, 219, 232);
+    color: rgba(50,97,140,1);
     text-transform: uppercase;
     font-family: forma-djr-display, sans-serif;
     font-weight: 700;
@@ -96,4 +97,20 @@ body {
     font-size: 3vmin;
     letter-spacing: 2px;
     margin-top: 10vh;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+.landing_info button:hover {
+    background-color: rgb(193, 219, 232);
+    color: rgba(50,97,140,1);
+    
+}
+
+.lighten {
+    top: 0;
+    bottom: 0;
+    background-color: rgba(255,255,255,0.6);
+    width: 100%;
+    position: absolute;
 }

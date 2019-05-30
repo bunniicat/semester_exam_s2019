@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://use.typekit.net/cbl2zkp.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="styleGlobal.css">
     <title>NASA FOR DUMMIES</title>
 </head>
 <body>
@@ -18,14 +18,12 @@
            
             </div>
             <ul>
-                <li><a href="index.html">— Home</a></li>
-                <li><a href="learn.html">— Learn about NASA</a></li>
-                <li><a href="contact.html">— Ask us anything</a></li>
-                <li><a href="explore.html">— Explore with us</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="learn.html">Learn about NASA</a></li>
+                <li><a href="contact.html">Ask us anything</a></li>
+                <li><a href="explore.html">Explore with us</a></li>
             </ul>
         </div>
-
-      
 
     <div class="header_section">
             <div class="header_photo">
@@ -37,31 +35,33 @@
         <div class="white_bar"></div>
         
         <div class="section_links">
-            <div class="section_box">
+            <a href="learn.html#section_nasa_info"><div class="section_box">
                 <img src="photos/icon_questionmark.png" alt="Question mark">
                 <p>What is nasa?</p>
-            </div>
+            </div></a>
     
-                <div class="section_box">
+                <a href="learn.html#section_timeline"><div class="section_box">
                     <img src="photos/icon_timeline.png" alt="Timeline">
                     <p>Timeline: missions</p>
-                </div>
-                    <div class="section_box">
+                </div></a>
+                    <a href="learn.html#section_moon_landing"><div class="section_box">
                         <img src="photos/icon_moon.png" alt="Moon">
                         <p>First moon landing</p>
-                    </div>
-                        <div class="section_box">
+                    </div></a>
+                <a href="learn.html#spaceWrapper"><div class="section_box">
                             <img src="photos/astronaut.png" alt="astronaut">
                             <p>in space right now</p>
-                        </div>
-                            <div class="section_box">
+                        </div></a>
+                          <a href="learn.html#section_ff"><div class="section_box">
                                 <img src="photos/icon_rocket.png" alt="Rocket ship">
                                 <p>fun facts</p>
-                            </div>
+                            </div></a>
                         </div>
     </div>
 
-    <div class="what_is_nasa">
+    <button onclick="backToTop()" id="top_button" title="Back to the top!">&#9650;</button>
+
+    <div class="what_is_nasa" id="section_nasa_info">
         <div class="section_title">
             <h3>What is nasa?</h3>
         </div>
@@ -85,7 +85,7 @@
         </div>
     </div>
 
-    <div class="timeline_box">
+    <div class="timeline_box" id="section_timeline">
         <div class="timeline_photo">
             <img src="photos/astronaut_planet.png" alt="illustration of an astronaut on a planet">
         </div>
@@ -93,7 +93,7 @@
             <h3>Timeline: NASA's most important missions</h3>
             <p>With backing from the US government, NASA has done a lot of great work in space exploration! If any organisation can do it  — NASA can!<br><br>
                 Click the arrow to see a timeline of NASA’s most important missions!</p>
-                <button id="accordion_button" onclick="displayTimeline()">&#8594;</button>
+                <button id="accordion_button" onclick="displayTimeline()">&#8595;</button>
         </div>
         <div class="timeline_content" id="hidden_timeline" style="display: none">
                 <p><span class="timeline_highlight">1961:</span> Freedom 7. 1st space launch, launching the 1st American to space. Alan Shepard.</p>
@@ -114,7 +114,7 @@
         </div>
     </div>
 
-    <div class="moon_landing_info">
+    <div class="moon_landing_info" id="section_moon_landing">
             <div class="moon_landing_photo">
             <img src="photos/man_on_moon.png" alt="Man on the Moon">
             </div>
@@ -138,7 +138,7 @@
         </div>
     </div>
 
-    <div class="fun_facts">
+    <div class="fun_facts" id="section_ff">
         <div class="ff_banner">
             <img src="photos/funfactbanner.png" alt="illustration of space activity">
         </div>

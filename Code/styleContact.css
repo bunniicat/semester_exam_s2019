@@ -1,0 +1,212 @@
+.contact_wrapper {
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    grid-template-rows: repeat(4, 20%); 
+    margin: 20px;
+}
+
+
+/* This will center the form */
+  .wrapper {
+    width: 100%;
+    height: 100%;
+    margin: 5% auto 0 auto; 
+    grid-column: 2/3;
+  }
+
+/* form animation starts */
+  .form {
+    background: #EBEBEB;
+    text-align: center; 
+    box-shadow: 0px 0px 20px 5px #AAA; 
+    border-radius: 10px;  
+    width: 90%; 
+    min-height: 400px;
+    max-height: 600px;
+    margin: 30px auto 0 auto;
+    padding: 10px 10px;  
+    animation: bounce 2s infinite;
+  }
+
+.name { 
+    background-color: #DF1B76;
+    border-bottom: 5px solid #B2175F;
+    color: white;
+    font-size: 1rem;
+    width:300px;
+  }
+
+  ::-webkit-input-placeholder{
+      color: white;
+      font-size: 20px;
+  }
+  .name:hover{
+    background-color: #DF1B76;
+    border-bottom: 5px solid #B2175F;
+    height:50px;
+    width:400px;
+  }
+
+  .email {
+    background-color: #7239C1;  
+    border-bottom: 5px solid #502789;
+    font-size: 1rem;
+    height:50px;
+    width:300px;
+    
+  }
+  .email:hover{
+    background-color: #7239C1;  
+    border-bottom: 5px solid #502789;
+    height:50px;
+    width:380px;
+   
+  }
+  .message {   
+    background-color: #2DD7BB;
+    border-bottom: 5px solid rgb(195, 35, 17);
+    overflow: hidden;
+    height: 100px;  
+    width:300px;
+    font-size: 1rem;
+  }
+
+  .message:hover{
+    background-color: #2DD7BB;
+    border-bottom: 5px solid #2BB09A;
+    height: 100px;
+    width:370px;
+  }
+
+  .submit{
+    border-radius:5px;
+    padding:10px;
+    background-color: #2DD7BB;  
+    border: none;
+    border-bottom: 5px solid #CB64B2; 
+    transform: translateY(-120px); 
+
+  }
+
+  .submit:hover{
+    border-bottom: 5px solid #CB64B2;  
+    box-shadow: 15px 15px 15px 5px rgba(78, 72, 77, 0.219);
+  }
+
+  .entry{
+    display: block;
+    margin: 30px auto;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    transition: all 0.5s ease 0s;
+    box-shadow: 0px 0px 25px 2px #AAA;  
+  }
+
+  /* Shadow to make it look like form is floating  */
+  .shadow{
+    box-shadow: 0px 0px 60px 5px #AAA;
+    opacity: 0.5;
+    border-radius: 100px;
+    width: 50%; 
+    margin: 50px auto 0 auto;
+    padding: 0 20px;  
+    animation: shadow 1.5s infinite;
+  }
+.submit{
+    border-radius:5px;
+    padding:10px;
+    width:150px;
+    color: white;
+    background-color: #EE78D1;  
+    border: none;
+    border-bottom: 5px solid #CB64B2; 
+    margin-top: 150px; 
+    font-family: forma-djr-display, sans-serif;
+    text-transform: uppercase;
+
+  }
+
+
+
+  @keyframes bounce{
+    0%{
+      
+    }
+    50%{
+      transform: translate(0, 8px);
+    }
+
+  }
+  @keyframes shadow{
+    0%{
+      
+    }
+    50%{
+      opacity: 0.8;
+      width: 50%;
+    }
+  }
+
+  .contact_info {
+      width: 90%;
+      font-family: forma-djr-display, sans-serif;
+      background-color: rgba(255,255,255,.5);
+      border-radius: 20px;
+      padding: 20px;
+      margin-top: 20px;
+  }
+
+  .contact_info h2 {
+      text-transform: uppercase;
+      color: rgba(18,69,140,1);
+  }
+
+  .contact_info h3 {
+      margin: 0;
+  }
+
+  .name_info {
+      text-transform: uppercase;
+      border-bottom: 5px solid #DF1B76;
+      width: 130px;
+      text-align: center;
+  }
+
+  .email_info {
+      text-transform: uppercase;
+      border-bottom: 5px solid #7239C1;
+      width: 70px;
+      text-align: center;
+  }
+
+  .message_info {
+      text-transform: uppercase;
+      border-bottom: 5px solid #2DD7BB;
+      width: 110px;
+      text-align: center;
+  }
+
+  .submit_info {
+      text-transform: uppercase;
+      border-bottom: 5px solid #EE78D1;
+      width: 90px;
+      text-align: center;
+  }
+
+  .contact_error {
+      font-family: forma-djr-display, sans-serif;
+      font-weight: 700;
+  }
+
+  #error_name {
+      display: none;
+  }
+
+  #error_email {
+      display: none;
+  }
+
+  #error_message {
+      display: none;
+  }
