@@ -58,6 +58,7 @@ body {
 .social_links ul {
     list-style: none;
     display: flex;
+    justify-content: space-between;
 }
 
 .social_links a {
@@ -70,6 +71,99 @@ body {
 }
 
 .social_links {
-    width: 25%;
+    width: 50%;
     margin: 0 auto;
+}
+
+.mobile_nav {
+    display: none;
+}
+
+#myNav {
+    display: none;
+}
+
+/* tablet styling - small screens */
+
+@media only screen and (max-width: 800px) {
+
+    .nav_bar ul li {
+        display: none;
+    }
+
+    .mobile_nav {
+        display: block;
+    }
+
+    #myNav {
+        display: block;
+    }
+
+    .mobile_nav img {
+        width: 70%;
+        margin-top: 13px;
+        cursor: pointer;
+    }
+
+    .mobile_nav {
+        color: rgba(18,69,140,1);
+        font-family: djr-forma-display, sans-serif;
+        font-size: 0.8rem;
+        text-transform: uppercase;
+    }
+
+    .overlay {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0, 0.9);
+        overflow-x: hidden;
+        transition: 0.5s;
+      }
+      
+      .overlay-content {
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center; 
+        margin-top: 30px;
+      }
+      
+      .overlay a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 2.5rem;
+        color: #818181;
+        display: block; 
+        transition: 0.3s;
+        text-transform: uppercase;
+        font-family: djr-forma-display, sans-serif;
+      }
+      
+      .overlay a:hover, .overlay a:focus {
+        color: #f1f1f1;
+      }
+      
+      .overlay .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+      }
+
+}
+
+@media (max-width: 481px) {
+    .overlay a {
+        font-size: 1.4rem;
+        margin: 30px;
+    }
+
+    .social_links {
+        width: 100%;
+    }
 }

@@ -9,11 +9,11 @@
     <title>NASA FOR DUMMIES</title>
 </head>
 <body>
+    <script src="scriptNav.js"></script>
 
     <div class="nav_bar">
             <div class="logo_nav">
-                <img src="photos/nasalogo_small.png" alt="NASA Logo">
-               
+               <a href="index.html"> <img src="photos/nasalogo_small.png" alt="NASA Logo"></a>
                 </div>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -21,7 +21,19 @@
                     <li><a href="contact.html">Ask us anything</a></li>
                     <li><a href="explore.html"> Explore with us</a></li>
                 </ul>
+                <div class="mobile_nav" onclick="openNav()"><img src="photos/mobilenav.png" alt="rocket icon"></div>
             </div>
+
+            <div id="myNav" class="overlay">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                  
+                    <div class="overlay-content">
+                      <a href="index.html">Home</a>
+                      <a href="learn.html">Learn About NASA</a>
+                      <a href="contact.html">Ask Us Anything</a>
+                      <a href="explore.html">Explore With Us</a>
+                    </div>
+                  </div>
 
             <div class="explore_wrapper">
                 <div class="explore_info">

@@ -11,10 +11,11 @@
 </head>
 <body>
     <script src="script.js"></script>
+    <script src="scriptNav.js"></script>
 
     <div class="nav_bar">
         <div class="logo_nav">
-            <img src="photos/nasalogo_small.png" alt="NASA Logo">
+           <a href="index.html"> <img src="photos/nasalogo_small.png" alt="NASA Logo"></a>
            
             </div>
             <ul>
@@ -23,7 +24,19 @@
                 <li><a href="contact.html">Ask us anything</a></li>
                 <li><a href="explore.html">Explore with us</a></li>
             </ul>
+            <div class="mobile_nav" onclick="openNav()"><img src="photos/mobilenav.png" alt="rocket icon"></div>
         </div>
+
+        <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+              
+                <div class="overlay-content">
+                  <a href="index.html">Home</a>
+                  <a href="learn.html">Learn About NASA</a>
+                  <a href="contact.html">Ask Us Anything</a>
+                  <a href="explore.html">Explore With Us</a>
+                </div>
+              </div>
 
     <div class="header_section">
             <div class="header_photo">
@@ -140,12 +153,10 @@
 
     <div class="fun_facts" id="section_ff">
         <div class="ff_banner">
-            <img src="photos/funfactbanner.png" alt="illustration of space activity">
-        </div>
-        <div class="centered_text">
+            <div class="ff_info">
                 <h1>Fun facts corner</h1>
                 <h3>Click the cards to reveal facts about NASA and space techonology!</h3>
-        </div>
+            </div></div>
         <div class="ff_wrapper">
             <div class="ff_box" id="ff1" onclick="showFact1()">
                 <p class="ff_number" id="n1" style="display: block">#1.</p>

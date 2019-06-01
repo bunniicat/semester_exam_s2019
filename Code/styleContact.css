@@ -210,3 +210,26 @@
   #error_message {
       display: none;
   }
+
+  @media only screen and (max-width: 800px) {
+
+    .wrapper {
+      grid-column: 1/3;
+      grid-row: 1/2;
+    }
+
+    .contact_info {
+      grid-column: 1/3;
+      margin: 0 auto;
+    }
+  }
+
+  @media (max-width: 481px) {
+    .name, .email, .message {
+      width: 250px;
+    }
+
+    .name:hover, .email:hover, .message:hover {
+      width: 280px;
+    }
+  }
