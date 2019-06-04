@@ -3,11 +3,13 @@
 }
 
 body {
-    margin: 0px 0px 0px 0px;
+    margin: 0px auto;
+    max-width: 1920px;
     background: linear-gradient(to bottom, #1c92d2, #f2fcfe);
     background-repeat: no-repeat;
     letter-spacing: 0.09em;
     scroll-behavior: smooth;
+
 }
 
 .nav_bar {
